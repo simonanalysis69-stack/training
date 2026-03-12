@@ -636,9 +636,9 @@ class PremiumSheinScanner:
         print(f"{DesignSystem.Colors.PLATINUM}Processing Parameters:{DesignSystem.Colors.RESET}")
         
         try:
-            threads = int(input(f"  {DesignSystem.Icons.THREAD} Threads (1-200) [5]: ") or "5")
-            batch_size = int(input(f"  {DesignSystem.Icons.BATCH} Batch size (10-500) [20]: ") or "20")
-            delay = int(input(f"  {DesignSystem.Icons.TIME} Delay (0-5s) [1]: ") or "1")
+            threads = 5
+            batch_size = 20
+            delay = 1
         except ValueError:
             print(f"{DesignSystem.Colors.WARNING}Invalid input, using defaults.{DesignSystem.Colors.RESET}")
             threads, batch_size, delay = 5, 20, 1
