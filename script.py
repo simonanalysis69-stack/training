@@ -816,7 +816,7 @@ def main():
         
         # Manual verification mode
         print(f"\n{DesignSystem.Colors.GOLD}Step 1: Manual Verification{DesignSystem.Colors.RESET}")
-        if not scanner.manual_check():
+        if not scanner.batch_mode():
             print(f"{DesignSystem.Colors.INFO}Manual verification skipped.{DesignSystem.Colors.RESET}")
         
         # Batch processing mode
